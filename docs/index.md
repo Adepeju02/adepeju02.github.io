@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: home
+author_profile: true
+title: "Home"
 ---
 
 # PJ Portfolio
