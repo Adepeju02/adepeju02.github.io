@@ -51,3 +51,15 @@ defaults:
 # Markdown
 markdown: kramdown
 highlighter: rouge
+
+nav:
+  - title: "About"
+    url: /about/
+  - title: "Projects"
+    url: /projects/
+  - title: "Write-ups"
+    url: /posts/
+  - title: "Resume"
+    url: /resume/
+  - title: "Contact"
+    url: /contact/
