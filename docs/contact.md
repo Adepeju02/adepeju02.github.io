@@ -1,3 +1,9 @@
+---
+layout: page
+title: Resume
+permalink: /resume/
+---
+
 ## Contact Me
 
 📧 Email: yourname@email.com  
