@@ -1,3 +1,9 @@
+---
+layout: page
+title: Resume
+permalink: /resume/
+---
+
 ## Resume
 
 📄 [Download My Resume](assets/Adeleke_Morenikeji_Cybersecurity_Resume.pdf)
