@@ -1,21 +1,3 @@
 theme: jekyll-theme-minimal
 title: PJ Adeleke Portfolio
 description: Welcome!
-
----
-layout: page
-title: About Me
-permalink: /about/
----
-
----
-layout: page
-title: Projects
-permalink: /projects/
----
-
----
-layout: page
-title: Resume
-permalink: /resume/
----
