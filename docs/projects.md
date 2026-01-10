@@ -1,3 +1,9 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+---
+
 ## Vulnerability Assessment & Penetration Testing Projects
 
 ### 🔐 Web Application Vulnerability Assessment (DVWA)
