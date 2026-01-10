@@ -1,3 +1,9 @@
+---
+layout: page
+title: About Me
+permalink: /about/
+---
+
 ## About Me
 
 I am a cybersecurity professional specializing in **Vulnerability Assessment and Penetration Testing**.
