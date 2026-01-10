@@ -1,11 +1,10 @@
 ---
-layout: page
-title: Resume
-permalink: /resume/
+title: "Contact"
+permalink: /contact/
 ---
 
 ## Contact Me
 
-📧 Email: yourname@email.com  
+📧 Email: adepejuadeleke29@email.com  
 💼 LinkedIn: https://linkedin.com/in/yourprofile  
 🐙 GitHub: https://github.com/yourusername
