@@ -1,3 +1,53 @@
-theme: jekyll-theme-minimal
-title: PJ Adeleke Portfolio
-description: Welcome!
+# Theme
+remote_theme: mmistakes/minimal-mistakes
+plugins:
+  - jekyll-include-cache
+
+# Site Settings
+locale: "en-US"
+title: "PJ Cybersecurity Portfolio"
+title_separator: "|"
+subtitle: "Vulnerability Assessment & Penetration Testing"
+name: "PJ"
+description: "Cybersecurity professional specializing in vulnerability assessment and penetration testing."
+url: "https://YOUR_USERNAME.github.io"
+baseurl: ""
+
+# Appearance
+minimal_mistakes_skin: "dark"
+
+# Author
+author:
+  name: "PJ"
+  avatar: "/assets/images/avatar.png"
+  bio: "Vulnerability Assessment | Penetration Testing | OWASP Top 10 | Network Security"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/YOUR_USERNAME"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/YOUR_PROFILE"
+
+# Navigation
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+
+# Markdown
+markdown: kramdown
+highlighter: rouge
