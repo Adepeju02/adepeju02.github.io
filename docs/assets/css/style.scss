@@ -5,14 +5,22 @@
 @import "minimal-mistakes/skins/mint";
 @import "minimal-mistakes";
 
-/* ── Typography & colour overrides ── */
+/* ── Variables ── */
 :root {
   --accent: #2d6a4f;
   --accent-light: #52b788;
 }
 
+/* ── Base typography ── */
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* ── Suppress the black page title banner on the home page ── */
+.layout--home .page__title,
+.layout--home .page__hero,
+.layout--home .page__lead {
+  display: none;
 }
 
 /* ── Home intro block ── */
@@ -32,9 +40,10 @@ body {
 
   .tagline {
     font-size: 1.05rem;
-    color: #666;
+    color: #555;
     margin-bottom: 1rem;
     font-weight: 500;
+    line-height: 1.6;
   }
 
   .intro-body {
@@ -52,12 +61,60 @@ body {
   }
 }
 
-/* ── Project card grid ── */
+/* ── Core competencies grid ── */
+.competency-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.competency-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.25rem;
+
+  h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e8f5e9;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.1rem;
+    list-style: disc;
+
+    li {
+      font-size: 0.875rem;
+      line-height: 1.7;
+      color: #444;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+/* ── Featured project card grid (home page) ── */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.25rem;
   margin: 1.5rem 0;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .project-card {
@@ -85,12 +142,12 @@ body {
   }
 }
 
-/* ── Project category tags ── */
+/* ── Project tag badge ── */
 .project-tag {
   display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   padding: 0.2rem 0.55rem;
   border-radius: 3px;
@@ -98,7 +155,7 @@ body {
   color: var(--accent);
 }
 
-/* ── Figure captions for project screenshots ── */
+/* ── Figure / screenshot blocks ── */
 .page__content figure {
   margin: 1.5rem 0;
   border: 1px solid #e5e5e5;
@@ -119,13 +176,16 @@ body {
   }
 }
 
-/* ── TOC sidebar styling ── */
-.toc {
-  border-radius: 6px;
+/* ── Collection grid (projects index) ── */
+.archive__item-teaser img {
+  border-radius: 6px 6px 0 0;
 }
 
-/* ── Responsive adjustments ── */
+.archive__item-title {
+  font-size: 1rem !important;
+}
+
+/* ── Responsive ── */
 @media (max-width: 600px) {
   .home-intro h1 { font-size: 1.8rem; }
-  .project-grid { grid-template-columns: 1fr; }
 }
