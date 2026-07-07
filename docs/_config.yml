@@ -1,35 +1,46 @@
 # Theme
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes@4.26.2
 plugins:
   - jekyll-include-cache
+  - jekyll-seo-tag
 
 # Site Settings
 locale: "en-US"
-title: "PJ Cybersecurity Portfolio"
-title_separator: "|"
-subtitle: "Vulnerability Assessment & Penetration Testing"
-name: "PJ"
-description: "Cybersecurity professional specializing in vulnerability assessment and penetration testing."
-url: "https://YOUR_USERNAME.github.io"
+title: "Morenikeji Adeleke"
+title_separator: "·"
+subtitle: "Cybersecurity Portfolio"
+name: "Morenikeji Adeleke"
+description: "Cybersecurity professional specializing in security operations, cloud security, and IT risk management. Experienced in Wazuh SIEM, Fortinet, Microsoft Entra ID, AWS, and penetration testing."
+url: "https://adepeju02.github.io"
 baseurl: ""
 
+# SEO
+twitter:
+  username: ""
+og_image: "/assets/images/avatar.png"
+
 # Appearance
-minimal_mistakes_skin: "dark"
+minimal_mistakes_skin: "mint"
 
 # Author
 author:
-  name: "PJ"
+  name: "Morenikeji \"PJ\" Adeleke"
   avatar: "/assets/images/avatar.png"
-  bio: "Vulnerability Assessment | Penetration Testing | OWASP Top 10 | Network Security"
+  bio: "Securing Corporate Networks & Cloud Infrastructure | IT Support & Security"
+  location: "Ontario, Canada"
   links:
-    - label: "GitHub"
-      icon: "fab fa-github"
-      url: "https://github.com/YOUR_USERNAME"
     - label: "LinkedIn"
-      icon: "fab fa-linkedin"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/YOUR_PROFILE"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/adepeju02"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:YOUR_EMAIL@example.com"
 
 # Navigation
+navigation: main
 collections:
   pages:
     output: true
@@ -41,6 +52,7 @@ defaults:
       type: pages
     values:
       layout: single
+      author_profile: true
   - scope:
       path: ""
       type: posts
@@ -52,14 +64,20 @@ defaults:
 markdown: kramdown
 highlighter: rouge
 
-nav:
-  - title: "About"
-    url: /about/
-  - title: "Projects"
-    url: /projects/
-  - title: "Write-ups"
-    url: /posts/
-  - title: "Resume"
-    url: /resume/
-  - title: "Contact"
-    url: /contact/
+# Exclude from processing
+exclude:
+  - "*.gemspec"
+  - "*.gem"
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+# Reading Files
+include:
+  - _pages
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
+timezone: America/Toronto

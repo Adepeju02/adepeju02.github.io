@@ -1,0 +1,131 @@
+---
+# Custom styles — loaded after Minimal Mistakes
+---
+
+@import "minimal-mistakes/skins/mint";
+@import "minimal-mistakes";
+
+/* ── Typography & colour overrides ── */
+:root {
+  --accent: #2d6a4f;
+  --accent-light: #52b788;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* ── Home intro block ── */
+.home-intro {
+  padding: 2rem 0 1rem;
+
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.4rem;
+  }
+
+  .accent {
+    color: var(--accent-light);
+  }
+
+  .tagline {
+    font-size: 1.05rem;
+    color: #666;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  .intro-body {
+    font-size: 1rem;
+    line-height: 1.75;
+    max-width: 680px;
+    color: #444;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
+
+/* ── Project card grid ── */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.project-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.25rem 1.25rem 1rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    transform: translateY(-2px);
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin: 0.4rem 0 0.6rem;
+    a { text-decoration: none; }
+  }
+
+  p {
+    font-size: 0.875rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+  }
+}
+
+/* ── Project category tags ── */
+.project-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  background-color: #e8f5e9;
+  color: var(--accent);
+}
+
+/* ── Figure captions for project screenshots ── */
+.page__content figure {
+  margin: 1.5rem 0;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  figcaption {
+    font-size: 0.8rem;
+    color: #777;
+    padding: 0.5rem 0.75rem;
+    background: #f9f9f9;
+    font-style: italic;
+  }
+}
+
+/* ── TOC sidebar styling ── */
+.toc {
+  border-radius: 6px;
+}
+
+/* ── Responsive adjustments ── */
+@media (max-width: 600px) {
+  .home-intro h1 { font-size: 1.8rem; }
+  .project-grid { grid-template-columns: 1fr; }
+}
