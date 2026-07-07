@@ -1,7 +1,6 @@
 ---
 layout: home
 author_profile: true
-title: false
 header:
   overlay_color: "#1a1a2e"
   overlay_filter: "0.4"
@@ -11,7 +10,7 @@ excerpt: false
 
 <div class="home-intro">
   <h1>Morenikeji <span class="accent">"PJ"</span> Adeleke</h1>
-  <p class="tagline">Cybersecurity Graduate · Security Operations · Cloud Security · IT Risk</p>
+  <p class="tagline">Security Operations · Cloud Security · IT Risk</p>
   <p class="intro-body">
     I build and monitor security infrastructure — from deploying SIEM platforms from scratch to configuring firewall policies, managing identity access, and hardening cloud environments. Currently completing a Graduate Certificate in Cybersecurity at Georgian College while contributing to real-world municipal IT security operations.
   </p>
